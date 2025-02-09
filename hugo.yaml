@@ -1,0 +1,194 @@
+baseURL: https://devoncommand.com
+languageCode: en-us
+title: Dev On Command
+# label:
+#   text: 'Home' # To display different label text other than title
+#   icon: '/apple-touch-icon.png' # To display a logo image in label
+#   iconHeight: 35 # To set size of label logo image
+contact:
+  email: contact@devoncommand.com
+theme: ["PaperMod"]
+pagination:
+  pagerSize: 5
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ['posts']
+minify:
+  disableXML: true
+  minifyOutput: true
+titleCaseStyle: ap
+languages:
+  en:
+    languageName: "🇺🇸"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - name: Home
+          url:
+          weight: 1
+        - name: Search
+          url: search
+          weight: 2
+        - name: Categories
+          url: posts
+          weight: 3
+        - name: Tags
+          url: tags
+          weight: 4
+        - name: Archive
+          url: archives
+          weight: 5
+          # - name: About
+          #   url: about
+          #   weight: 6
+    params:
+    # languageAltTitle: English (US)
+    # profileMode:
+    #   enabled: true
+    #   title: PaperMod
+    #   imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+    #   imageTitle: ProfileMode image
+    #   # imageWidth: 120
+    #   # imageHeight: 120
+    #   subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+    #   buttons:
+    #     - name: Blog
+    #       url: posts
+    #     - name: Profile Mode
+    #       url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+  # pt-BR:
+  #   languageName: "🇧🇷"
+  #   weight: 2
+  #   title: Dev On Command
+  #   taxonomies:
+  #     category: categorias
+  #     tag: tags
+  #   menu:
+  #     main:
+  #       - name: Arquivo
+  #         url: archives
+  #         weight: 5
+  #       - name: Pesquisar
+  #         url: search
+  #         weight: 10
+  #       - name: Tags
+  #         url: tags
+  #         weight: 10
+  #   params:
+  #     languageAltTitle: Português do Brasil
+  #     # profileMode:
+  #     #   enabled: true
+  #     #   title: PaperMod
+  #     #   imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+  #     #   imageTitle: ProfileMode image
+  #     #   # imageWidth: 120
+  #     #   # imageHeight: 120
+  #     #   subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+  #     #   buttons:
+  #     #     - name: Blog
+  #     #       url: posts
+  #     #     - name: Profile Mode
+  #     #       url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  comments: true
+  description: "Dev On Command - https://github.com/devoncommand"
+  author: Dev On Command # ["Me", "You"]
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  images: []
+  # profileMode:
+  #   enabled: true
+  #   title: PaperMod
+  #   imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+  #   imageTitle: ProfileMode image
+  #   # imageWidth: 120
+  #   # imageHeight: 120
+  #   subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+  #   buttons:
+  #     - name: Blog
+  #       url: posts
+  #     - name: Profile Mode
+  #       url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+  homeInfoParams:
+    Title: "Hi, I'm Gabriel."
+    Content: "🚀 **Welcome!**  \nThis is **DEV On Command**, a blog where I share content about **programming, Linux, self-hosting, and best development practices**.  \nI'm a **Computer Engineering student** from São Paulo, Brazil, passionate about technology and programming.  \n"
+  socialIcons:
+    - name: youtube
+      title: Youtube channel
+      url: "https://www.youtube.com/@DevOnCommand"
+    - name: github
+      title: Github
+      url: "https://github.com/devoncommand"
+    - name: rss
+      title: RSS feed
+      url: "/index.xml"
+    - name: KoFi
+      title: Buy me a Ko-Fi :)
+      url: "https://ko-fi.com/devoncommand"
+  editPost:
+    URL: "https://github.com/devoncommand/devoncommand.github.io/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+  assets:
+    disableHLJS: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - "categories"
+      - "content"
+      - "description"
+      - "keywords"
+      - "permalink"
+      - "summary"
+      - "tags"
+      - "title"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
+ignoreFiles:
+  - ./content/posts/template.md
