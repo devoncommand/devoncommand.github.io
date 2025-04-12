@@ -26,6 +26,27 @@ languages:
   en:
     languageName: "🇺🇸"
     weight: 1
+    params:
+      homeInfoParams:
+        Title: "Hi, I'm Gabriel."
+        Content: "🚀 **Welcome!**  \nThis is **DEV On Command**, a blog where I share content about **programming, Linux, self-hosting, and best development practices**.  \nI'm a **Computer Engineering student** from São Paulo, Brazil, passionate about technology and programming.  \n"
+      socialIcons:
+        - name: youtube
+          title: Youtube channel
+          url: "https://www.youtube.com/@DevOnCommand"
+        - name: github
+          title: Github
+          url: "https://github.com/devoncommand"
+        - name: rss
+          title: RSS feed
+          url: "/index.xml"
+        - name: KoFi
+          title: Buy me a Ko-Fi :)
+          url: "https://ko-fi.com/devoncommand"
+      editPost:
+        URL: "https://github.com/devoncommand/devoncommand.github.io/tree/main/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
     taxonomies:
       category: categories
       tag: tags
@@ -44,6 +65,53 @@ languages:
           url: tags
           weight: 4
         - name: Archive
+          url: archives
+          weight: 5
+          # - name: About
+          #   url: about
+          #   weight: 6
+  pt:
+    languageName: "🇧🇷"
+    weight: 1
+    params:
+      homeInfoParams:
+        Title: "Olá, me chamo Gabriel."
+        Content: "🚀 **Bem-vindo!**  \nEste é o **DEV On Command**, um blog onde compartilho conteúdo sobre **programação, Linux, auto-hospedagem e melhores práticas de desenvolvimento**.  \nSou **estudante de Engenharia da Computação** e moro em São Paulo, Brasil. Sou apaixonado por tecnologia e programação.\n"
+      socialIcons:
+        - name: youtube
+          title: Canal do Youtube
+          url: "https://www.youtube.com/@DevOnCommand"
+        - name: github
+          title: Github
+          url: "https://github.com/devoncommand"
+        - name: rss
+          title: Feed RSS
+          url: "/index.xml"
+        - name: KoFi
+          title: Doação
+          url: "https://ko-fi.com/devoncommand"
+      editPost:
+        URL: "https://github.com/devoncommand/devoncommand.github.io/tree/main/content"
+        Text: "Sugerir Alterações" # texto de edição
+        appendFilePath: true # to append file path to Edit link
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - name: Página inicial
+          url:
+          weight: 1
+        - name: Buscar
+          url: search
+          weight: 2
+        - name: Categorias
+          url: posts
+          weight: 3
+        - name: Tags
+          url: tags
+          weight: 4
+        - name: Arquivado
           url: archives
           weight: 5
           # - name: About
@@ -85,26 +153,6 @@ params:
   #       url: posts
   #     - name: Profile Mode
   #       url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-  homeInfoParams:
-    Title: "Hi, I'm Gabriel."
-    Content: "🚀 **Welcome!**  \nThis is **DEV On Command**, a blog where I share content about **programming, Linux, self-hosting, and best development practices**.  \nI'm a **Computer Engineering student** from São Paulo, Brazil, passionate about technology and programming.  \n"
-  socialIcons:
-    - name: youtube
-      title: Youtube channel
-      url: "https://www.youtube.com/@DevOnCommand"
-    - name: github
-      title: Github
-      url: "https://github.com/devoncommand"
-    - name: rss
-      title: RSS feed
-      url: "/index.xml"
-    - name: KoFi
-      title: Buy me a Ko-Fi :)
-      url: "https://ko-fi.com/devoncommand"
-  editPost:
-    URL: "https://github.com/devoncommand/devoncommand.github.io/tree/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
   # analytics:
   #     google:
   #         SiteVerificationTag: "XYZabc"

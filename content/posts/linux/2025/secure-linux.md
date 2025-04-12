@@ -2,15 +2,12 @@
 # region: Hugo
 # author: [] # [string<Array> | string]
 date: 2025-02-08
-expiryDate: 2025-02-08T23:59:59-03:00 # Hugo excludes expired pages, use `--buildExpired` to include them
+expiryDate: 2026-02-08T23:59:59-03:00 # Hugo excludes expired pages, use `--buildExpired` to include them
 draft: false
 title: 'Linux Security Hardening: Best Practices'
 summary: 'Essential tips for hardening Linux security, including user management, firewall setup, and SSH protection.' # Refer to: 'https://gohugo.io/content-management/summaries/'
 description: 'This guide provides an introduction to essential Linux server security practices. Although it primarily focuses on Debian and Ubuntu, the principles discussed here are applicable to other Linux distributions as well. I also recommend exploring these topics further and adapting them to your specific needs.'
-tags:
-    - 'linux'
-    - 'security'
-    - 'hardening'
+tags: ['linux', 'security', 'hardening']
 aliases: [] # URL aliases. [string<Array>]
 keywords: ['Linux security', 'Linux hardening'] # [string<Array>]
 categories: ['Linux'] # [string<Array>]

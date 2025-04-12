@@ -1,7 +1,7 @@
 ---
-title: 'Archive'
+title: 'Arquivado'
 layout: 'archives'
-summary: archives
+summary: arquivado
 ---
 
 <!-- @format -->
